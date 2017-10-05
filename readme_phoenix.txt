@@ -13,8 +13,14 @@ Ricardo Munch 11-10684
 Para instalar:
 
 - Recomendaciones instalar virtualenv/virtualenvwrapper
-virtualenv: https://virtualenv.pypa.io/en/stable/installation/
-virtualenvwrapper: https://virtualenvwrapper.readthedocs.io/en/latest/install.html
+* virtualenv: https://virtualenv.pypa.io/en/stable/installation/
+* virtualenvwrapper: https://virtualenvwrapper.readthedocs.io/en/latest/install.html
+* Crear env para instalar los requerimientos
 
 - Instalar requirements del requirements.txt con el siguiente comando:
-'$ pip install -r requirements.txt'
+* '$ pip install -r requirements.txt'
+
+- Agregar requerimiento:
+* Al instalar alguna libreria nueva para el proyecto ejecutar:
+    '$ pip freeze > requirements.txt'
+  desde el directorio raiz del repo.
