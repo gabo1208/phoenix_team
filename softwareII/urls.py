@@ -11,5 +11,5 @@ urlpatterns = [
     # Auth urls 
     url(r'^user/', include('django.contrib.auth.urls')),
     # User Views
-    url(r'^user/', include('users.urls')),
+    url(r'^user/', include('users.urls', namespace='users')),
 ]
