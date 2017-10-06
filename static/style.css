@@ -26,3 +26,7 @@ body{
 .content{
 	margin-top: 40px;
 }
+
+.main-sidebar, .navbar-custom-menu{
+	visibility: hidden;
+}
