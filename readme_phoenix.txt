@@ -18,9 +18,12 @@ Para instalar:
 * Crear env para instalar los requerimientos
 
 - Instalar requirements del requirements.txt con el siguiente comando:
-* '$ pip install -r requirements.txt'
+	'$ pip install -r requirements.txt'
 
 - Agregar requerimiento:
 * Al instalar alguna libreria nueva para el proyecto ejecutar:
     '$ pip freeze > requirements.txt'
   desde el directorio raiz del repo.
+
+ - Crear usuario:
+ 	'$ python manage.py createsuperuser'
