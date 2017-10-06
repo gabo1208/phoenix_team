@@ -13,7 +13,7 @@ def index(request):
 
 @login_required(login_url='/user/login')
 def index_decorator(request):
-    return render(request, 'index.html', context={'msg':"Hello, world. You're at the decorator index, if you're logged in."})
+    return render(request, 'decorator.html', context={'msg':"Hello, world. You're at the decorator index, if you're logged in."})
 
 
 @aspectlib.Aspect
@@ -31,4 +31,4 @@ def strip_return_value(request):
 
 @strip_return_value
 def index_aspect(request, **kwargs):
-    return render(request, 'index.html', context={'msg': kwargs['args']['message']})
+    return render(request, 'aspect.html', context={'msg': kwargs['args']['message']})

@@ -30,3 +30,10 @@ body{
 .main-sidebar, .navbar-custom-menu{
 	visibility: hidden;
 }
+
+.code_snippet{
+    background: grey;
+    color: white;
+    font-size: larger;
+    padding: 10px;
+}
