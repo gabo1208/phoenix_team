@@ -9,14 +9,14 @@ from django.contrib.auth.decorators import login_required
 def index(request):
     return HttpResponse("Hello, world. You're at index.")
 
-@login_required(login_url='/login')
+@login_required(login_url='/user/login')
 def index_decorator(request):
     return HttpResponse("Hello, world. You're at the decorator index, if you're logged in.")
 
 @aspectlib.Aspect
 def strip_return_value(request):
     if not request.user.is_authenticated:
-        yield aspectlib.Return(HttpResponseRedirect('/login/?next=' + request.path))
+        yield aspectlib.Return(HttpResponseRedirect('/user/login/?next=' + request.path))
     else:
         yield aspectlib.Proceed(
             request, 

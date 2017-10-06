@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     ## Custom Written apps ##
+    'main.apps.MainConfig',
     'users.apps.UsersConfig',
 ]
 
